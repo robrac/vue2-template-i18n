@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="setLocal($i18n.locale)">{{ $t("lang_name") }}:<b>{{ $i18n.locale }}</b></button>
+    <HelloWorld :msg="$t('message')" />
   </div>
 </template>
 
@@ -12,6 +13,12 @@ export default {
   name: "App",
   components: {
     HelloWorld,
+  },
+  methods: {
+    setLocal (lang) {
+      localStorage.setItem("local", lang === "en-US" ? "zh-CN" : "en-US");
+      this.$i18n.locale = lang === "en-US" ? "zh-CN" : "en-US";
+    },
   },
 };
 </script>
