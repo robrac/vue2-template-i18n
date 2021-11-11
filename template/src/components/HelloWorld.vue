@@ -1,14 +1,14 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>\{{ msg }}</h1>
     <p>
-      {{$t("subtitle")}},<br />
-      {{$t("check_out_the")}}
+      \{{$t("subtitle")}},<br />
+      \{{$t("check_out_the")}}
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >{{$t("vue-cli_documentation")}}</a
+        >\{{$t("vue-cli_documentation")}}</a
       >.
     </p>
-    <h3>{{$t("installed_cli_plugins")}}</h3>
+    <h3>\{{$t("installed_cli_plugins")}}</h3>
     <ul>
       <li>
         <a
@@ -27,7 +27,7 @@
         >
       </li>
     </ul>
-    <h3>{{$t("essential_links")}}</h3>
+    <h3>\{{$t("essential_links")}}</h3>
     <ul>
       <li>
         <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
@@ -51,7 +51,7 @@
         <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
       </li>
     </ul>
-    <h3>{{$t("ecosystem")}}</h3>
+    <h3>\{{$t("ecosystem")}}</h3>
     <ul>
       <li>
         <a href="https://router.vuejs.org" target="_blank" rel="noopener"

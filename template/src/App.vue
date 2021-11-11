@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <button @click="setLocal($i18n.locale)">{{ $t("lang_name") }}:<b>{{ $i18n.locale }}</b></button>
+    <button @click="setLocal($i18n.locale)">\{{ $t("lang_name") }}:<b>\{{ $i18n.locale }}</b></button>
     <HelloWorld :msg="$t('message')" />
   </div>
 </template>
